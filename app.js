@@ -14,3 +14,13 @@ fetch(url2)
 }
 
 sendmail();
+
+//axios post request
+ axios.post(url2, {
+    firstName: 'Fred',
+    lastName: 'Flintstone'
+  })
+  .then(function (response) {
+    console.log(response);
+  }
+)
